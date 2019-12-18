@@ -1,0 +1,12 @@
+@import './config';
+
+.btn{
+    background-color: #ffffff;
+    border: .1rem solid $clr-positive;
+    border-radius: 5%;
+    padding: .5rem 1rem;
+    color: $clr-negative;
+    margin: .2rem;
+    font-weight: 600;
+    text-shadow: .05rem .05rem .05rem #a7bdd6;
+}
