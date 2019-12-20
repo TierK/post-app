@@ -19,8 +19,8 @@ export default class Post extends Component {
             <div className="Post">
                 <PostHeader authorName={'Kim'} 
                             dateCreated={formatDate(this.props.dateCreated)} 
-                            authorProfileUrl = {"http://www.downloadclipart.net/medium/46586-pokemon-icon-images.png"}
-                            authorProfileImage={this.props.authorProfileImage} 
+                            authorProfileUrl = {"#"}
+                            authorProfileImg={"http://icons.iconarchive.com/icons/iconka/meow/256/cat-clean-icon.png"} 
                             />
                 <PostImage imageUrl = {"https://i.ytimg.com/vi/q7NFgJ8Zmfs/maxresdefault.jpg"} imageAlt={"Tom & Jerry"} />
                 <PostContent text={this.props.content} />

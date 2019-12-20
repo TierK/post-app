@@ -7,10 +7,10 @@ export default class PostHeader extends Component {
         return (
             
             <div className="PostHeader">
-                <img src={this.props.authorProfileImage} alt="user pic"/>
-                <div>
-                    <a href={this.props.authorProfileUrl}>{this.props.authorName}</a>
-                    <span>{this.props.dateCreated}</span>
+                <img src={this.props.authorProfileImg || "http://icons.iconarchive.com/icons/yellowicon/halloween/256/Black-Cat-icon.png"} alt="user pic"/>
+                <div className="userData">
+                     <a href={this.props.authorProfileUrl}>{this.props.authorName}</a>
+                     <span>{this.props.dateCreated}</span>
                 </div>
             </div>
         );

@@ -1,13 +1,25 @@
+@import '../../scss/config';
+
 .PostHeader{
     display: flex;
-    flex-wrap: nowrap;
     width: 90%;
     height: 5.4rem;
     margin: 0 auto;
-    justify-content: center;
 }
 
 .PostHeader img{
-    width: 20px;
-    height: 20px;
+    padding: 0.1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: .15rem solid $clr-positive;
+    margin-top: .5rem;
+
+}
+
+.userData{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    margin-top: .5rem;
 }
