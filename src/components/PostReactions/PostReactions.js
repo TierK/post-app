@@ -1,11 +1,13 @@
 import React from 'react';
 import PostButton from '../PostButton/PostButton.js';
+import './PostReactions.scss';
 
 
 class PostReactions extends React.Component {
     state = {
         likeCount: this.props.likeCount || 0,
     };
+
 
     likePost = () => {
         this.setState(state => ({
@@ -19,10 +21,10 @@ class PostReactions extends React.Component {
 
     render() {
         return (
-            <div className="postReactions">
-                <div>
-                    {this.state.likeCount} likes
-                    {this.props.commentCount} comments
+            <div className="PostReactions">
+                <div className="reactionsTitles">
+                    {this.state.likeCount} likes   
+                    {this.props.commentCount} comments   
                     {this.props.shareCount} shares
                 </div>
                 <div>
